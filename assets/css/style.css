@@ -50,6 +50,11 @@ li {
   padding: 0 0 10px;
 }
 
+.boxy {
+  width: 120px;
+  border-radius: 30px;
+}
+
 /*-----------------------------------------------------------------*/
 /*                      PRELOADER                                  */
 /*-----------------------------------------------------------------*/
@@ -661,7 +666,7 @@ li {
 
 .facts .fact-item em.number {
   font-family: "Montserrat", sans-serif;
-  font-size: 30px;
+  font-size: 25px;
   font-style: normal;
   color: #FFF;
   display: block;
@@ -997,13 +1002,15 @@ li {
 
 .customers .item {
   margin-right: 24px;
+  margin: auto;
   position: relative;
   z-index: 1;
+  width: 200px;
 }
 
 .customers .item img {
   max-width: 100%;
-  opacity: .5;
+  opacity: 1;
   height: auto;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1086,25 +1093,12 @@ li {
   padding: 5px 8px;
   position: absolute;
   background: #0C0C0C;
-  -webkit-transition: all .8s ease-in-out;
-  -moz-transition: all .8s ease-in-out;
-  -o-transition: all .8s ease-in-out;
-  transition: all .8s ease-in-out;
-  -ms-transform: rotateY(0deg);
-  -webkit-transform: rotateY(0deg);
-  transform: rotateY(0deg);
 }
 
 .btn-default:hover {
   color: #FFF;
   background-color: #0C0C0C;
   border: 0;
-}
-
-.btn-default:hover:after {
-  -ms-transform: rotateY(360deg);
-  -webkit-transform: rotateY(360deg);
-  transform: rotateY(360deg);
 }
 
 /* === Progress Bar === */
@@ -1178,6 +1172,10 @@ li {
 
 .owl-theme .owl-controls {
   margin-top: 30px;
+}
+
+.owl-item {
+  width: 200px;
 }
 
 /*-----------------------------------------------------------------*/

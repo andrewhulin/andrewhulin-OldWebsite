@@ -34,7 +34,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 img {
@@ -962,6 +962,12 @@ li {
 /*-----------------------------------------------------------------*/
 .blog .item {
   margin-bottom: 30px;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.blog h2 {
+  margin-left: 50px;
 }
 
 .blog .item .thumb {
@@ -977,10 +983,12 @@ li {
 .blog .item .text h2 {
   font-size: 18px;
   font-weight: 400;
-  margin: 0 0 15px;
+  margin: 0 0 24px;
+  margin-left: 70px;
 }
 
 .blog .item .text p {
+  font-size: 20px;
   margin: 0 0 15px;
 }
 

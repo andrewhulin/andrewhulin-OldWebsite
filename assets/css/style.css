@@ -504,7 +504,7 @@ li {
   content: '';
   position: absolute;
   background: transparent;
-  bottom: 10px;
+  top: -10px;
   left: 0;
   height: 16px;
   width: 16px;

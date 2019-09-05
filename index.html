@@ -1,711 +1,357 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<!--[if IE 10 ]><html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US"> <![endif]-->
+<!--[if (gte IE 11)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
 
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>ANDREW HULIN</title>
-	<meta name="description" content="Andrew Hulin Portfolio and Resume">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+	<meta charset="utf-8">
 
-	<!-- STYLESHEETS -->
-	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/owl.theme.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all">
-	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+	<title>Andrew Hulin</title>
 
-	<!-- SHARE INFO -->
-	<meta property="og:site_name" content="ANDREW HULIN" />
-	<meta property="og:title" content="ANDREW HULIN" />
-	<meta property="og:description" content="Andrew Hulin Portfolio and Resume" />
-	<meta property="og:image" content="Glitch.JPG">
+	<!-- Behavioral Meta Data -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+	<!-- Core Meta Data -->
+	<meta name="author" content="Andrew-Hulin">
+	<meta name="description" content="Andrew Hulin: multidisciplinary designer with an emphasis on storytelling.">
+	<meta name="keywords" content="andrew,hulin,portfolio,creative,multidisciplinary,3D,design,storytelling,graphics,product">
+
+	<!-- Put in the google Analytics link here -->
+
+	<!-- Favicon -->
+	<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/AH3D-Logo.png">
+	<link rel="icon" type="image/png" href="images/favicons/AH3D-Logo.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="images/favicons/AH3D-Logo.png" sizes="16x16">
+	<link rel="manifest" href="images/favicons/manifest.json">
+	<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#21252b">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- Open Graph -->
+	<meta property="og:title" content="Andrew Hulin">
 	<meta property="og:url" content="https://andrewhulin.com">
-	<meta property="og:type" content="portfolio" />
+	<meta property="og:description" content="Andrew Hulin: multidisciplinary designer with an emphasis on storytelling.">
+	<meta property="og:image" content="images/preview-image.png">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:site_name" content="Andrew Hulin">
+	<meta property="og:type" content="website">
 
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:title" content="Andrew Hulin">
+	<meta name="twitter:description" content="Andrew Hulin: multidisciplinary designer with an emphasis on storytelling.>
+	<meta name="twitter:image" content="images/preview-image.png">
+	<meta name="twitter:site" content="@hulinandrew">
 
-	<!-- GOOGLE FONTS -->
-	<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,300,100,700' rel='stylesheet' type='text/css'>
+	<!-- Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Raleway:400,700&display=swap" rel="stylesheet">
 
-	<!-- SCRIPTS -->
-	<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-	<!--<script src="https://unpkg.com/ityped@1.0.3"></script> -->
+	<!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-reboot.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/bootstrap/bootstrap-grid.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-	<!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-  <![endif]-->
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132753178-1"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-
-		gtag('config', 'UA-132753178-1');
-
-	</script>
-
+	<!-- Javascript Libraries -->
+	<script src="js/libraries/jquery-3.2.1.min.js"></script>
+	<script src="js/libraries/modernizr-custom.min.js"></script>
+	<script src="js/libraries/velocity.min.js"></script>
+	<script src="js/libraries/three.min.js"></script>
 </head>
 
+
 <body>
-	<!-- Preloader -->
-	<div class="preloader-outer">
-		<div class="preloader">
-			<div class="lines">
-				<div class="line line-1"></div>
-				<div class="line line-2"></div>
-				<div class="line line-3"></div>
+	<main role="main">
+		<section id="hero" class="hero">
+			<div class="hero__object-shadow"><img src="3d/deer-shadow.png" alt=""></div>
+
+			<!-- Trigger Buttons -->
+			<a href="#" class="hero__trigger-button top">About</a>
+			<a target="_blank" href="https://www.instagram.com/andrew.hulin.design/?hl=en" class="hero__trigger-button two">Visuals</a>
+			<a href="#" class="hero__trigger-button bottom">Work</a>
+			<!--<a href="#" class="hero__trigger-button left">Writing</a>-->
+			<!--<a href="#" class="hero__trigger-button right">Visuals</a>-->
+
+			<!-- Meta -->
+			<!-- <img class="logo" src="images/logo.svg" alt="Scene Logo"> -->
+
+			<div class="meta name">
+				<p><small>Andrew Hulin</small></p>
 			</div>
 
-			<div class="loading-text">- AH -</div>
-		</div>
-	</div>
-	<!-- Preloader end -->
-
-	<!-- Main Wrapper -->
-	<main class="wrapper">
-
-		<!-- Header -->
-		<header class="header pull-left" style="height:100vh">
-
-			<!-- Mobile menu -->
-			<div class="mobile-bar visible-sm visible-xs">
-				<div class="hamburger-menu">
-					<div class="bar"></div>
-				</div>
-			</div>
-			<!-- Mobile menu end -->
-
-			<div class="avatar">
-				<a href="index.html">
-					<img src="assets/images/prof.JPG" alt="avatar">
-				</a>
-			</div>
-
-			<div class="name">
-
-				<a href="index.html">
-					<h1>Andrew Hulin</h1>
-				</a>
-
-				<a href="https://iovine-young.usc.edu/"><span>USC Iovine and Young Academy</span></a>
-			</div>
-
-			<!-- Social Icons -->
-			<div class="social-icons">
+			<div class="meta social">
 				<ul>
-					<li><a target="_blank" href="https://www.linkedin.com/in/andrewhulin"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-					<li><a target="_blank" href="https://twitter.com/hulinandrew"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-					<li><a target="_blank" href="https://www.instagram.com/andrew.hulin/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/hulinandrew" target="_blank"><span
+								data-hover="twitter">twitter</span></a></li>
+					<li><a href="https://www.instagram.com/andrew.hulin/?hl=en" target="_blank"><span
+								data-hover="instagram">instagram</span></a></li>
+					<li><a href="www.linkedin.com/in/andrewhulin" target="_blank"><span
+								data-hover="linkedin">linkedin</span></a></li>
 				</ul>
 			</div>
-			<!-- Social Icons end -->
 
-			<!-- Navigation bar -->
-			<nav class="main-nav">
-				<ul class="navigation">
-					<li class="current"><a href="#welcome">Welcome</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#resume">Education / Experience</a></li>
-					<li><a href="#works">Projects</a></li>
-					<li><a href="#blog">Writing / Press</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</nav>
-			<!-- Navigation bar end -->
-
-			<!-- Footer Copyright -->
-			<div class="copyright">
-				<span>Copyright 2019 Andrew Hulin</span>
+			<!-- The Sound Icon
+			<div class="meta sound">
+				<a class="mute-action muted" href="#"></a>
 			</div>
-			<!-- Footer Copyright end -->
+			-->
 
-		</header>
-		<!-- Header end -->
+		</section>
 
-		<!-- Main Content -->
-		<div class="main-content pull-right">
-
-			<!-- Section Welcome -->
-			<section id="welcome" class="welcome">
-				<div class="quote text-center">
-					<h2>ANDREW HULIN</h2>
-					<span class="author"></span>
-					<script type="text/javascript">
-						var options = {
-							strings: ["Product Innovation", "Product Design", "Product Management"],
-							typeSpeed: 40,
-							smartBackspace: true,
-							loop: true,
-							loopCount: Infinity,
-							backDelay: 1000,
-							backSpeed: 100,
-							showCursor: false
-						}
-
-						var typed = new Typed(".author", options);
-
-					</script>
-				</div>
-				<script type="text/javascript">
-
-				</script>
-				<div class="overlay"></div>
-			</section>
-			<!-- Section Welcome end -->
-
-			<!-- Section About -->
-			<section id="about" class="about">
-
-				<div class="section-header">
-					<h2>About Andrew</h2>
-				</div>
-
-				<!-- Intro -->
-				<div class="intro">
-
-					<p style="font-size:18px;">Currently using high-level entrepreneurial skills to develop products, media, non-profits, and social organizations. My most valuable skill is my ability to develop and communicate ideas across engineering, design,
-						and business teams. This
-						year I am focusing on developing skills in product design, design thinking, entrepreneurship and working on a minor in 3D Animation at the University of Southern California.</p>
-					<br>
-					<br>
-
-
-					<ul class="info">
-						<li>School: <strong>University of Southern California - USC Iovine and Young Academy</strong></li>
-						<li>Major: <a target="_blank" href="https://iovine-young.usc.edu/"><strong>B.S. Arts, Technology and the Business of Innovation</strong></a></li>
-						<li>Minor: <a target="_blank" href="https://catalogue.usc.edu/preview_program.php?catoid=11&poid=11221&returnto=3517"><strong>3D Animation</strong></a></li>
-						<li>Email: <strong>ahulin@usc.edu</strong></li>
-					</ul>
-
-				</div>
-				<!-- Intro end -->
-
-			</section>
-			<!-- Section About end -->
-
-			<!-- Section Fun Facts -->
-			<section id="facts" class="facts">
-
-				<div class="section-header-light">
-					<a href="https://iovine-young.usc.edu/">
-						<h2>The Iovine and Young Academy</h2>
-					</a>
-				</div>
-
-				<div class="row">
-					<div class="col-md-12 col-sm-12 col-xs-12 fact-item">
-						<em class="number">The undergraduate degree program focuses on nurturing and developing original thought leading to breakthrough products, systems, technologies and more by teaching students about design, innovative technologies, and
-							entrepreneurship.</em>
-					</div>
-
-
-					<!--
-				<div class="row">
-
-					<div class="col-md-3 col-sm-3 col-xs-6 fact-item">
-						<em class="number">455</em>
-						<span class="text">Projects Completed</span>
-					</div>
-
-					<div class="col-md-3 col-sm-3 col-xs-6 fact-item">
-						<em class="number">240</em>
-						<span class="text">Happy Customers</span>
-					</div>
-
-					<div class="col-md-3 col-sm-3 col-xs-6 fact-item">
-						<em class="number">5870</em>
-						<span class="text">Hours worked</span>
-					</div>
-
-					<div class="col-md-3 col-sm-3 col-xs-6 fact-item">
-						<em class="number">32</em>
-						<span class="text">Awards won</span>
-					</div>
-
-				</div> -->
-
-					<div class="overlay"></div>
-
-			</section>
-			<!-- Section Fun Facts end -->
-
-			<section id="resume" class="resume">
-
-				<div class="section-header">
-					<h2>3D Work</h2>
-
-				</div>
-
-				<div class="row">
-					<!-- SnapWidget -->
-					<script src="https://snapwidget.com/js/snapwidget.js"></script>
-					<iframe src="https://snapwidget.com/embed/673403" class="snapwidget-widget" allowtransparency="true" frameborder="0" scrolling="no" style="border:none; overflow:hidden; width:100%; "></iframe>
-					<a href="https://www.instagram.com/andrew.hulin.design/?hl=en" class="btn btn-default">Full Profile</a>
-				</div>
-
-			</section>
-			<!-- Section Resume end -->
-
-			<!-- Section Resume -->
-			<section id="resume" class="resume">
-
-				<div class="section-header">
-					<h2>Education / Experience</h2>
-
-				</div>
-
-				<div class="row">
-
-					<!-- Carousel -->
-					<div class="resume-carousel">
-
-						<div class="carousel-item">
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="top-item resume-item">
-									<h2>Communications and Integrated Marketing</h2>
-									<span>2018 - Present</span>
-									<p>USC Jimmy Iovine and Andre Young Academy</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="top-item resume-item">
-									<h2>Product Manager</h2>
-									<span>Fall 2018</span>
-									<p>Lavalab - USC's premiere startup incubator and entrepreneurship hub</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="resume-item">
-									<h2>3D Design Intern</h2>
-									<span>Jun 2018 - Aug 2018</span>
-									<p>Pictographics - Las Vegas 2D/3D printing and design/manufacturing</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="resume-item">
-									<h2>Design and Communication</h2>
-									<span>Summer/Fall 2018</span>
-									<p>National Center for School Crisis and Bereavement</p>
-								</div>
-							</div>
-
+		<section id="about" class="about idle">
+			<div class="about__content">
+				<div class="container">
+					<div class="row">
+						<div
+							class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box first">
+							<h5>About Me</h5>
+							<img src="images/AH_about.png" alt="Andrew Hulin Profile Photo Portfolio Website" style="width:540px;padding-bottom: 10px;">
+							<p>I am a multidisciplinary designer and product manager with an emphasis on 
+								storytelling and understanding how people interact with their digital 
+								and physical environments.
+							<ul class="social">
+								<li><a href="https://twitter.com/hulinandrew"><span data-hover="twitter">twitter</span></a></li>
+								<li><a href="https://www.instagram.com/andrew.hulin/?hl=en"><span data-hover="instagram">instagram</span></a></li>
+								<li><a href="www.linkedin.com/in/andrewhulin"><span data-hover="linkedin">linkedin</span></a></li>
+							</ul>
 						</div>
-						<!-- Page 1 End -->
-
-						<div class="carousel-item">
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="top-item resume-item">
-									<h2>University of Southern California</h2>
-									<span>2017 - 2021</span>
-									<p>Jimmy Iovine and Andre Young Academy</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="top-item resume-item">
-									<h2>Northwest Career and Technical Academy</h2>
-									<span>2013 - 2017</span>
-									<p>Emphasis in Engineering and Design - Valedictorian</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="resume-item">
-									<h2>Product Development</h2>
-									<span>Fall 2017</span>
-									<p>Spiff - A startup exploring social media and public art</p>
-								</div>
-							</div>
-
-							<div class="col-md-6 col-sm-6 col-xs-12">
-								<div class="resume-item">
-									<h2>Writer</h2>
-									<span>Summer 2017</span>
-									<p>Becoming Human - An online publication about humanity and technology</p>
-								</div>
-							</div>
-
-						</div>
-						<!-- Page 2 end -->
-
 					</div>
-					<!-- Carousel end -->
+					<div class="row">
+						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box">
+							<h5>Skills</h5>
+							<ul class="services">
+								<li>Design Strategy</li>
+								<li>Creative Direction</li>
+								<li>Product Design</li>
+								<li>3D Graphics</li>
+								<li>Media &amp; Communication</li>
+								<li>Front-end Development</li>
+							</ul>
+						</div>
+					</div>
+
+					<!-- Content Client Box
+					<div class="about__content__full-box">
+						<div class="row">
+							<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+								<h5>Clients</h5>
+								<p>We’ve had the pleasure to work with companies such as Apple, Microsoft, Google,
+									Github &amp; more.</p>
+								<ul class="client-list">
+									<li><img src="images/partners/partner-2.png" alt="Client"></li>
+									<li><img src="images/partners/partner-1.png" alt="Client"></li>
+									<li><img src="images/partners/partner-3.png" alt="Client"></li>
+									<li><img src="images/partners/partner-4.png" alt="Client"></li>
+									<li><img src="images/partners/partner-5.png" alt="Client"></li>
+									<li><img src="images/partners/partner-6.png" alt="Client"></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					-->
+
+					<div class="row">
+						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 about__content__box last">
+							<h5>Want to get in touch?</h5>
+							<p>Send an e-mail over at <a class="underline"
+									href="mailto:hulinandrew@gmail.com">hulinandrew@gmail.com</a></p>
+						</div>
+					</div>
+					
 
 				</div>
+				<!-- META -->
+				<!-- <img class="logo" src="images/logo.svg" alt="Scene Logo"> this is where the logo goes -->
 
-			</section>
-			<!-- Section Resume end -->
-
-			<!-- Section Works -->
-			<section id="works" class="works clearfix">
-
-				<div class="section-header">
-					<h2>Portfolio Projects</h2>
+				<div class="meta name">
+					<p><small>Andrew Hulin</small></p>
 				</div>
 
-				<!-- Control -->
-				<!--	<div class="control">
+				<div class="meta social">
 					<ul>
-						<li class="active"><a class="filter" data-filter="all">All Projects</a></li>
-						<li><a class="filter" data-filter="1">Logo</a></li>
-						<li><a class="filter" data-filter="2">Vector</a></li>
-						<li><a class="filter" data-filter="3">Audio</a></li>
-						<li><a class="filter" data-filter="4">Video</a></li>
+						<li><a href="https://twitter.com/hulinandrew" target="_blank"><span
+									data-hover="twitter">twitter</span></a></li>
+						<li><a href="https://www.instagram.com/andrew.hulin/?hl=en" target="_blank"><span
+									data-hover="instagram">instagram</span></a></li>
+						<li><a href="www.linkedin.com/in/andrewhulin" target="_blank"><span
+									data-hover="linkedin">linkedin</span></a></li>
 					</ul>
-				</div> -->
-
-				<!-- Items Outer -->
-				<div class="item-outer row clearfix">
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="1" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="assets/pdfs/BPp.pdf">
-								<div class="title">
-									<div class="inner">
-										<h2>Bubble</h2>
-										<span>A Music Ideation Tool</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/BP.png" alt="Bubble Music App">
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="2" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="https://spark.adobe.com/page/e8mJVNNc7qC8B/">
-								<!--class="work-video" for the in site display-->
-								<div class="title">
-									<div class="inner">
-										<h2>The Merciv Playground</h2>
-										<span>Where music meets interactive media</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/SF.JPG" alt="portfolio">
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="1" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="https://www.instagram.com/usciovineyoung/?hl=en">
-								<div class="title">
-									<div class="inner">
-										<h2>Social Media and Communications</h2>
-										<span>Integrated Marketing</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/IYAL.jpg" alt="portfolio">
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="2" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="https://www.instagram.com/andrew.graphics/?hl=en">
-								<div class="title">
-									<div class="inner">
-										<h2>Product Design and 3D Graphics</h2>
-										<span>Misc 3D Works</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/Tree.png" alt="portfolio">
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="3" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="assets/pdfs/RCp.pdf">
-								<div class="title">
-									<div class="inner">
-										<h2>ReliefConnect</h2>
-										<span>Twitter Bot for Disaster Relief</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/RClogo.png" alt="portfolio">
-						</div>
-					</div>
-
-					<div class="col-md-4 col-sm-6 col-xs-12 filtr-item" data-category="4" data-sort="value">
-						<div class="item">
-							<a target="_blank" href="https://devpost.com/software/choos">
-								<div class="title">
-									<div class="inner">
-										<h2>Choos</h2>
-										<span>Hackathon Winner</span>
-									</div>
-								</div>
-							</a>
-							<div class="overlay"></div>
-							<img src="assets/images/choos.png" alt="portfolio">
-						</div>
-					</div>
-				</div>
-				<!-- Items Outer end -->
-				<!--More Items
-				<div class="more-items clearfix">
-					<a href="portfolio.html"><i class="fa fa-th-large" aria-hidden="true"></i>More Projects</a>
-				</div>
--->
-			</section>
-			<!-- Section Works end -->
-
-			<!-- Section Testimonials -->
-			<section id="testimonials" class="testimonials">
-
-				<div class="section-header">
-					<h2>Awards / Certifications</h2>
 				</div>
 
-				<!-- Carousel -->
-				<div class="testimonial-carousel">
-
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 hidden-xs">
-								<div class="thumb">
-									<img src="assets/images/innovation.png" alt="testimonial-customer">
-								</div>
-							</div>
-							<div class="text col-md-9 col-sm-9 col-xs-12">
-								<p style="font-size:24px;">Winner of the 2018 USC Global Futurethon</p>
-								<span class="author" style="font-size:14px;">- USC Marshall School of Business -</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 hidden-xs">
-								<div class="thumb">
-									<img src="assets/images/sketch.png" alt="testimonial-customer">
-								</div>
-							</div>
-							<div class="text col-md-9 col-sm-9 col-xs-12">
-								<p style="font-size:24px;">Certificate of Skill Attainment: Drafting and Design</p>
-								<span class="author" style="font-size:14px;">- Nevada Department of Education -</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 hidden-xs">
-								<div class="thumb">
-									<img src="assets/images/home.png" alt="testimonial-customer">
-								</div>
-							</div>
-							<div class="text col-md-9 col-sm-9 col-xs-12">
-								<p style="font-size:24px;">Certificate of Skill Attainment: Architecture and Civil Engineering</p>
-								<span class="author" style="font-size:14px;">- Nevada Department of Education -</span>
-							</div>
-						</div>
-					</div>
-
-					<div class="item">
-						<div class="row">
-							<div class="col-md-3 col-sm-3 hidden-xs">
-								<div class="thumb">
-									<img src="assets/images/3D.png" alt="testimonial-customer">
-								</div>
-							</div>
-							<div class="text col-md-9 col-sm-9 col-xs-12">
-								<p style="font-size:24px;">AP + PLTW Student Achievement in Engineering Award</p>
-								<span class="author" style="font-size:14px;">- Collegeboard -</span>
-							</div>
-						</div>
-					</div>
-
+				<!-- sound button
+				<div class="meta sound">
+					<a class="mute-action" href="#"></a>
 				</div>
-				<!-- Carousel end -->
+				-->
 
-			</section>
-			<!-- Section Testimonials end -->
+				<a href="#" class="close-button top">Close</a>
+			</div>
+		</section>
 
-			<!-- Section Blog -->
-			<section id="blog" class="blog">
+		<section id="work" class="work idle">
+			<div class="work__content">
+				<div class="container">
+					<div class="row initial-position">
+						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box first">
+							<h5>Projects</h5>
+							<p>Some projects I've worked on inside and outside of school.</p>
 
-				<div class="section-header">
-					<h2>Writing / Press</h2>
-				</div>
+							<!-- Removing the filters
+							<ul class="filters">
+								<li data-filter="*" class="is-checked"><span data-hover="all">all</span></li>
+								<li data-filter=".branding"><span data-hover="branding">branding</span></li>
+								<li data-filter=".web-design"><span data-hover="web design">web design</span></li>
+								<li data-filter=".print"><span data-hover="print">print</span></li>
+								<li data-filter=".video"><span data-hover="video">video</span></li>
+							</ul>
+							-->
 
-				<!-- Item 1 -->
-				<div class="item">
+						</div>
+					</div>
+
+					<!-- Ajax Section -->
+					<div class="ajax-section clearfix">
+						<div class="ajax-section__loader"></div>
+						<div class="ajax-section__project-navigation">
+							<ul>
+								<li class="next"><a href="#">next project</a></li>
+								<li class="prev"><a href="#">previous project</a></li>
+							</ul>
+						</div>
+						<div class="ajax-section__project-close">
+							<a href="#">close</a>
+						</div>
+						<div class="ajax-section__content"></div>
+					</div>
+					<!-- End Ajax Section -->
+
+					<div class="row work__content__thumbnails">
+
+						<!-- Project 1 -->
+						<div class="col-12 col-md-4 project show video">
+							<a href="https://www.instagram.com/p/Bv7CzmhBdxX/" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>Pop Clips<br><span>Product Design</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb1.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+						<!-- Project 2 -->
+						<div class="col-12 col-md-4 project show branding">
+							<a href="https://spark.adobe.com/page/e8mJVNNc7qC8B/" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>The Merciv Playground<br><span>Experience Design</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb2.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+						<!-- Project 3 -->
+						<div class="col-12 col-md-4 project show branding">
+							<a href="https://www.instagram.com/usciovineyoung/?hl=en" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>USC Iovine and Young Academy<br><span>Media Design</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb3.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+						<!-- Project 4 -->
+						<div class="col-12 col-md-4 project show print">
+							<a href="projects/PDF/BP.pdf" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>Bubble<br><span>Product Management</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb4.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+						<!-- Project 5 -->
+						<div class="col-12 col-md-4 project show web-design">
+							<a href="projects/PDF/RC.pdf" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>ReliefConnect<br><span>Twitter Bot For Disaster Relief</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb5.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+						<!-- Project 6 -->
+						<div class="col-12 col-md-4 project show print">
+							<a href="https://devpost.com/software/choos" class="thumbnail">
+								<div class="overlay">
+									<div class="project-info">
+										<p>Choos<br><span>Hackathon Winning Project</span></p>
+									</div>
+								</div>
+								<img src="images/project-grid/thumb6.jpg" alt="thumbnail">
+							</a>
+						</div>
+
+					</div>
+
 					<div class="row">
-						<div class="thumb col-md-4 col-sm-3 col-xs-12">
-							<img src="assets/images/FT.png" alt="blog-post">
-						</div>
-						<div class="text col-md-8 col-sm-9 col-xs-12">
-							<h2 style="margin-left: 0px; font-family: 'Roboto Slab', serif; font-size: 20px;">Winners of the 2018 Global Futurethon</h2>
-							<p style="font-size: 18px;">In a hackathon concerning global refugees, we created a system of image based communication that allows mental health workers and refugees to transcend language and receive help regardless of communication
-								barriers.</p>
-
-							<a href="https://iovine-young.usc.edu/thepulse/Winners-of-Futurethon-2018_147.html" class="btn btn-default">Read more</a>
-
+						<div class="col-10 offset-1 col-md-8 offset-md-2 col-lg-6 offset-lg-3 work__content__box last">
+							<h5>Want to contact me?</h5>
+							<p>Send me an e-mail over at <a class="underline"
+									href="mailto:hulinandrew@gmail.com">hulinandrew@gmail.com</a></p>
 						</div>
 					</div>
 				</div>
+				<!-- META -->
+				<!-- <img class="logo" src="images/logo.svg" alt="Scene Logo"> Another Logo -->
 
-				<!-- Item 2 -->
-				<div class="item">
-					<div class="row">
-						<div class="thumb col-md-4 col-sm-3 col-xs-12">
-							<img src="assets/images/MH.jpeg" alt="blog-post">
-						</div>
-						<div class="text col-md-8 col-sm-9 col-xs-12">
-							<h2 style="margin-left: 0px; font-family: 'Roboto Slab', serif;font-size: 20px;">The Future Of Music Technology And Why You Should Be Watching Closely</h2>
-							<p style="font-size: 18px;">A look at the future of music technology, especially as artificial intelligence begins composing.</p>
-
-							<a href="https://becominghuman.ai/the-future-of-music-technology-and-why-you-should-be-watching-closely-240b7e7b2200" class="btn btn-default">Read more</a>
-
-						</div>
-					</div>
+				<div class="meta name">
+					<p><small>Andrew Hulin</small></p>
 				</div>
 
-				<!-- Item 3 -->
-				<div class="item">
-					<div class="row">
-						<div class="thumb col-md-4 col-sm-3 col-xs-12">
-							<img src="assets/images/AH.png" alt="blog-post">
-						</div>
-						<div class="text col-md-8 col-sm-9 col-xs-12">
-							<h2 style="margin-left: 0px; font-family: 'Roboto Slab', serif;font-size: 20px; ">Northwest Career and Technical Academy Valedictorian Address</h2>
-							<p style="font-size: 18px;">2017 Valedictorian Address</p>
-
-							<a target="_blank" href="https://youtu.be/hSYsJqgnz7M" class="btn btn-default">Read more</a>
-
-						</div>
-					</div>
-				</div>
-
-			</section>
-			<!-- Section Blog end -->
-
-			<!-- Section Customers -->
-			<section id="customers" class="customers">
-
-				<div class="section-header-light">
-					<h2>Programs / Skills</h2>
-				</div>
-
-				<!-- Carousel -->
-				<div class="customer-carousel">
-
-					<div class="item boxy">
-						<img style="border-radius:30px;" src="assets/images/f360.jpg" alt="fusion 360">
-					</div>
-					<div class="item boxy">
-						<img style="border-radius:30px;" src="assets/images/SW.png" alt="Solidworks">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/MM.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/PY.png" alt="client">
-					</div>
-
-					<div class="item boxy">
-						<img src="assets/images/My.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img style="border-radius:30px;" src="assets/images/KL.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/illustrator.png" alt="Adobe illustrator">
-					</div>
-
-
-
-					<div class="item boxy">
-						<img src="assets/images/AU.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/PS.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/AE.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/PR.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/ID.png" alt="client">
-					</div>
-					<div class="item boxy">
-						<img src="assets/images/XD.png" alt="client">
-					</div>
-
-
-
-
-
-				</div>
-				<!-- Carousel end -->
-
-				<div class="overlay"></div>
-
-			</section>
-			<!-- Section Customers end -->
-
-			<!-- Section Contact -->
-			<section id="contact" class="about">
-
-				<div class="section-header">
-					<h2>Contact</h2>
-				</div>
-
-				<!-- Intro -->
-				<div class="intro">
-
-					<ul class="info">
-						<li>Email: <strong>ahulin@usc.edu</strong></li>
-						<a href="https://www.linkedin.com/in/andrewhulin">
-							<li>LinkedIn: <strong>Andrew Hulin</strong></li>
-						</a>
+				<div class="meta social">
+					<ul>
+						<li><a href="https://twitter.com/hulinandrew" target="_blank"><span
+									data-hover="twitter">twitter</span></a></li>
+						<li><a href="https://www.instagram.com/andrew.hulin/?hl=en" target="_blank"><span
+									data-hover="instagram">instagram</span></a></li>
+						<li><a href="www.linkedin.com/in/andrewhulin" target="_blank"><span
+									data-hover="linkedin">linkedin</span></a></li>
 					</ul>
-
 				</div>
-				<!-- Intro end -->
+				<!-- The sound Icon
+				<div class="meta sound">
+					<a class="mute-action" href="#"></a>
+				</div>
+				-->
 
-			</section>
-			<!-- Section Contact end -->
-
-		</div>
-		<!-- Main Content end -->
-
+				<a href="#" class="close-button bottom">Close</a>
+			</div>
+		</section>
 	</main>
-	<!-- Main Wrapper end -->
 
-	<!-- SCRIPTS -->
-	<script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.onepage-scroll.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.backstretch.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.filterizr.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
-	<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
-	<script type="text/javascript" src="assets/js/smoothscroll.min.js"></script>
+	<!-- Noise -->
+	<div class="grain"></div>
 
+	<!-- Javascript -->
+	<script src="js/plugins/queryloader.min.js" type="text/javascript"></script>
+	<script src="js/plugins/retina.min.js" type="text/javascript"></script>
+	<script src="js/plugins/ion.sound.min.js" type="text/javascript"></script>
+	<script src="js/plugins/imagesloaded.min.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.fitvids.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery-ui.min.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.event.move.js" type="text/javascript"></script>
+	<script src="js/plugins/jquery.event.swipe.js" type="text/javascript"></script>
+	<script src="js/plugins/unslider.js" type="text/javascript"></script>
+	<script src="js/3d/projector.js" type="text/javascript"></script>
+	<script src="js/3d/canvasrenderer.js" type="text/javascript"></script>
+	<script src="js/3d/object-loader.js" type="text/javascript"></script>
+	<script src="js/main.js" type="text/javascript"></script>
 </body>
 
 </html>
